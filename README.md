@@ -4,12 +4,7 @@
 Completed the items in: https://github.com/dtdataplatform/data-challenges/tree/main/data-engineer
 
 ## Pre-ramble
-Development is a balance of design choices balanced with efficiency. Efficiency can be measured in development 
-time as well as code execution time.
-
-I could spend days refactoring and writing more elegant code, but sometimes 
-we just have to call it "good enough" so I'm not spending days working on this
-challenge.
+I didn't have a lot of time to fully write out this code. Hopefully, this is a good enough demonstration.
 
 I also acknowledge the unit tests are lacking. I built out the framework so it can be
 seen my approach, but writing all the unit test will take a bit of time.

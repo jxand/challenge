@@ -2,6 +2,7 @@ import sqlite3
 from ro.event import Event as RO
 from typing import List
 
+RO_DB = "ro.db"
 
 class SQLManager:
 
@@ -11,7 +12,7 @@ class SQLManager:
         Checks to see if database and table exists, if not it will create them
         :return: None
         """
-        conn = sqlite3.connect("../ro.db")
+        conn = sqlite3.connect(RO_DB)
         cur = conn.cursor()
 
         res = cur.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='ro';")
@@ -47,7 +48,7 @@ class SQLManager:
         :param data: List of RO objects
         :return:
         """
-        conn = sqlite3.connect("../ro.db")
+        conn = sqlite3.connect(RO_DB)
         cur = conn.cursor()
 
         # IRL, should make the string SQL insert safe (check for quotes within the strings

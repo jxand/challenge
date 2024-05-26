@@ -20,6 +20,7 @@ Initialize environment
 make init
 ```
 
+Run the code
 ```
 make run
 ```
